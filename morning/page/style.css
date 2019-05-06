@@ -1,0 +1,45 @@
+html{
+  font-family: 'lato','sans-serif' ;
+  font-size: 18px;
+}
+body{
+  background-color: #FFFFFF;
+}
+h1{
+  text-align: center;
+  color: #23226C;
+  font-size:  240%;
+  font-weight: 900;
+}
+h2{
+  color: #23226C;
+  font-size:  180%;
+  font-weight: 900;
+}
+strong{
+  color: black;
+}
+
+article {
+  width: 50rem;
+  margin: 0 auto;
+}
+p {
+  color: #555555;
+  line-height: 150%;
+}
+a{
+  color:#6290C3;
+}
+
+section {
+  padding: 0.5rem 2rem;
+} 
+em{
+  background-color: #D2D6EF;
+  font-style: normal;
+}
+
+.intro{
+  background-color: #D2D6EF;
+}

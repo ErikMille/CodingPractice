@@ -1,0 +1,40 @@
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+body{
+    background-image: url('grid.png');
+      
+}
+.box{
+    background-color: blueviolet;
+    display: block;
+    width: 10rem;
+    height: 100vh;
+    padding: 1rem;
+    border:1px solid black;
+    margin:0rem auto;
+    position: fixed;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV6OMm8XAdCngy_qgeuEHqJhYf6Z2HcBjVTh4sZ9jRRI-jQCge);
+    background-repeat: repeat-y ;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.box1{
+    background-color: blueviolet;
+    display: block;
+    width: 30%;
+    /* height: 5rem; */
+    padding: 1rem;
+    margin:1rem auto;
+    border:1px solid black;
+    position: relative;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV6OMm8XAdCngy_qgeuEHqJhYf6Z2HcBjVTh4sZ9jRRI-jQCge);
+    background-repeat: repeat-y ;
+    background-size: contain;
+    background-attachment: fixed;
+}
