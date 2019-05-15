@@ -1,0 +1,38 @@
+*{box-sizing: border-box;}
+html{
+    font-size: calc(16px+5vmin);
+}
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.board{
+    height: 90vmin;
+    width: 90vmin;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.line{
+    height: 12.5%;
+    background-color: yellow;
+    width:100%;
+}
+
+.white{
+    display: inline-block;
+    width: 12.5%;
+    height: 100%;
+    background-color: blanchedalmond;
+    border:1px solid yellow;
+    font-size: 100px;
+}
+.black{
+    display: inline-block;
+    width: 12.5%;
+    height: 100%;
+    background-color: brown;
+    border:1px solid yellow;
+}
