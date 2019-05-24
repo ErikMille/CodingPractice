@@ -1,0 +1,46 @@
+*{box-sizing: border-box;}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin:1rem auto;
+    max-width: 400px;
+    background-color: turquoise;
+    padding: 1rem;
+}
+.res{
+    display: flex;
+    background-color: aquamarine;
+    width:100% !important;
+    justify-content: flex-end;
+}
+#res{
+    text-align: right;
+}
+.op{
+    width:1rem;
+}
+
+
+.button{
+    height: 3rem;
+    width:25%;
+    margin: 0;
+}
+
+button{
+    height: 100%;
+    width: 100%;
+}
+
+#num{
+    width:100%;
+    padding: 1rem 0rem;
+    text-align: right;
+}
+
+#clear{
+    display: inline-block;
+    padding: 1rem;
+    width:100%;
+} 

@@ -1,0 +1,57 @@
+*{box-sizing: border-box;}
+html{font-size: 20px}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+}
+
+
+@keyframes my{
+    from{opacity: 0}
+    to{opacity: 100}
+}
+@keyframes my1{
+    from{opacity: 100}
+    to{opacity: 0}
+}
+.bo{display: inline-block;}
+.box{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    height: 100%;
+    color:white;
+}
+
+.pic{
+    
+    background-color: #D41D34;
+    padding: 1rem;
+
+}
+.list{
+    padding: 1rem;
+    background-color: #D41D34;
+    /* animation-direction: reverse; */
+    animation-duration: 1s;
+    animation-name: my;
+    
+}
+.list_hiden{
+    padding: 1rem;
+    background-color: #D41D34;
+    opacity: 0;
+
+    animation-duration: 1s;
+    animation-name: my1;
+    /* display: none; */
+    
+}
+
+.content{flex-grow: 1;}
+
+.container{
+    min-height: 20px;
+    background-color: grey;
+}

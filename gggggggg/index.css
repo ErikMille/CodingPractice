@@ -1,0 +1,22 @@
+*{box-sizing: border-box;  }
+
+.chips{
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+}
+.container{
+    height: 50rem;
+    width: 50rem;
+    border: 2px solid red;
+}
+.sum{
+    font-size: 3rem;
+}

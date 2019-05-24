@@ -1,0 +1,11 @@
+*{box-sizing: border-box;}
+
+
+.b1{width: 200px; height:200px;}
+
+.eq{display: none;}
+
+.container{
+    display: flex;
+    align-items: center;
+}
