@@ -1,0 +1,148 @@
+<script>const numbers = [15, 4, 11, 27, 56, 10, 4, 7, 14, 25, 66, 33];
+    const users = ['martha', 'eve', 'johnny', 'thedude', 'onyxx', 'dagesus', 'duckling44'];
+    const furniture = [
+      {
+        name: 'Table',
+        price: 100,
+        available: true,
+      },
+      {
+        name: 'Chair',
+        price: 20,
+        available: false,
+      },
+      {
+        name: 'Bookshelf',
+        price: 55,
+        available: true,
+      },
+      {
+        name: 'Sofa',
+        price: 1200,
+        available: true,
+      },
+      {
+        name: 'Coffeetable',
+        price: 45,
+        available: false,
+      },
+      {
+        name: 'Bed',
+        price: 800,
+        available: false,
+      },
+      {
+        name: 'Nightstand',
+        price: 12,
+        available: true,
+      },
+    ];
+const values = [13.5, 12.1, 10.9, 16.3, 12.3, 11.4]
+
+const result = [];
+values.forEach(val => result.push(Math.round(val)));
+const filt = values.filter(val=>val>13)
+
+// console.log(result)
+// console.log(filt)
+
+const map13 = numbers.map(val=>Math.abs(val-13))
+console.log(map13)
+
+const mapsqrt = numbers.map(val=>Math.sqrt(val))
+console.log(mapsqrt)
+
+const mapuser = users.map(val=>val.length)
+console.log(mapuser)
+document.addEventListener('DOMContentLoaded', () => {
+    lis=users.map(item =>{
+        elem=document.createElement('li');
+        elem.textContent=item;
+        return elem;
+    });
+    lis.forEach(li=>document.querySelector('ul').appendChild(li))
+});
+
+const  furniturePrices =  furniture.map(val=>val.price)
+console.log(furniturePrices);
+
+const oddNumbers = numbers.filter(val=>val%2)
+console.log(oddNumbers)
+
+const  furnitureLow =  furniture.filter(val=>val.price<120)
+console.log(furnitureLow);
+
+const  furnitureAvailable =  furniture.filter(val=>val.available)
+console.log(furnitureAvailable);
+
+const string = numbers.reduce((x,y)=>x+y,'')
+console.log(string)
+
+const furniturePriceSum = furniture.reduce((x,y)=>x+y.price,0)
+console.log(furniturePriceSum)
+
+const furnitureCount = furniture.reduce((x,y)=>y.available?x+1:x,0)
+console.log(furnitureCount)
+
+const voters = [
+  {name:'Bob' , age: 30, voted: true},
+  {name:'Jake' , age: 32, voted: true},
+  {name:'Kate' , age: 25, voted: false},
+  {name:'Sam' , age: 20, voted: false},
+  {name:'Phil' , age: 21, voted: true},
+  {name:'Ed' , age:55, voted:true},
+  {name:'Tami' , age: 54, voted:true},
+  {name: 'Mary', age: 31, voted: false},
+  {name: 'Becky', age: 43, voted: false},
+  {name: 'Joey', age: 41, voted: true},
+  {name: 'Jeff', age: 30, voted: true},
+  {name: 'Zack', age: 19, voted: false}
+];
+let votersCount ={ 
+  youngVotes: 0,
+  youth: 0,
+  midVotes: 0,
+  mids: 0,
+  oldVotes: 0,
+  olds: 0 
+}
+voted=voters.filter(val=>val.voted)
+votersCount.oldVotes = voted.reduce((x,y) => (y.age>35)&&(y.age<=55) ? x+1: x, votersCount.oldVotes)
+votersCount.midVotes = voted.reduce((x,y) => (y.age>25)&&(y.age<=35) ? x+1: x, votersCount.midVotes)
+votersCount.youngVotes = voted.reduce((x,y) => y.age<=25 ? x+1: x, votersCount.youngVotes)
+
+votersCount.olds = voters.reduce((x,y) => (y.age>35)&&(y.age<=55) ? x+1: x, votersCount.olds)
+votersCount.mids = voters.reduce((x,y) => (y.age>25)&&(y.age<=35) ? x+1: x, votersCount.mids)
+votersCount.youth = voters.reduce((x,y) => y.age<=25 ? x+1: x, votersCount.youth)
+console.log(votersCount)
+
+let votersCount2 ={ 
+  youngVotes: 0,
+  youth: 0,
+  midVotes: 0,
+  mids: 0,
+  oldVotes: 0,
+  olds: 0 
+}
+votersCount2 = voters.reduce((x,y) => {
+    if(y.age<=25){
+        x.youngVotes=y.voted? x.youngVotes+1:x.youngVotes;
+        x.youth++;
+    }else if(y.age<=35){
+        x.midVotes=y.voted? x.midVotes+1:x.midVotes;
+        x.mids++;
+    }else{
+        x.oldVotes=y.voted? x.oldVotes+1:x.oldVotes;
+        x.olds++;
+    }
+    return x;
+}, votersCount2);
+
+console.log(votersCount2);
+
+</script>
+<body>
+    <ul>
+        
+    </ul>
+</body>

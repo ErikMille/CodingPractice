@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    color:white;
+    margin: 10px;
+    flex-shrink: 0;
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 600px;
+    background-color: white;
+}
